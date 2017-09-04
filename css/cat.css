@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'iconfont';  /* project id 404072 */
-  src: url('http://at.alicdn.com/t/font_404072_pdx30ig1gnak0529.eot');
-  src: url('http://at.alicdn.com/t/font_404072_pdx30ig1gnak0529.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_404072_pdx30ig1gnak0529.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_404072_pdx30ig1gnak0529.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_404072_pdx30ig1gnak0529.svg#iconfont') format('svg');
+  src: url('https://at.alicdn.com/t/font_404072_fkm89w5ihyy9o1or.eot');
+  src: url('https://at.alicdn.com/t/font_404072_fkm89w5ihyy9o1or.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_404072_fkm89w5ihyy9o1or.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_404072_fkm89w5ihyy9o1or.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_404072_fkm89w5ihyy9o1or.svg#iconfont') format('svg');
 }
 @font-face {
   font-family: 'iconfont';  /* project id 404268 */
-  src: url('http://at.alicdn.com/t/font_404268_wdblmy0kwsysnhfr.eot');
-  src: url('http://at.alicdn.com/t/font_404268_wdblmy0kwsysnhfr.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_404268_wdblmy0kwsysnhfr.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_404268_wdblmy0kwsysnhfr.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_404268_wdblmy0kwsysnhfr.svg#iconfont') format('svg');
+  src: url('https://at.alicdn.com/t/font_404268_wdblmy0kwsysnhfr.eot');
+  src: url('https://at.alicdn.com/t/font_404268_wdblmy0kwsysnhfr.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_404268_wdblmy0kwsysnhfr.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_404268_wdblmy0kwsysnhfr.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_404268_wdblmy0kwsysnhfr.svg#iconfont') format('svg');
 }
 .top{
 	width: 100%;
@@ -43,6 +43,9 @@
 	float: right;
 	margin-right: 46px;
 }
+.top-r a:hover{
+	color: red;
+}
 .r-wenzi{
 	background:#f0f0;
 	font-size: 11px;
@@ -50,9 +53,28 @@
 	float: left;
 	line-height: 33px;
 	color: #999999;
+
 }
 .r-wenzi1{
 	margin-right: 0;
+	/* position: relative; */
+}
+.r-wenzi2 .i{
+	/* position: relative; */
+	top: 2px;
+}
+.y1{
+	float: left;
+	line-height: 34px;
+	margin-right: -5px;
+}
+.y1 i{
+	color: red;
+	font-size: 18px;
+	float: left;
+	margin-right: 7px;
+	
+	
 }
 .iconfont{
 
@@ -68,14 +90,21 @@
 	width: 13px;
 	height: 13px;
 	text-align: center;
-	line-height: 13px;
+	
 	color: red;
 
 }
 .r-wenzi2 i{
+	content:""; 
+	display: block;
 	color: #bbbbbb;
+	float: right;
+	line-height: 16px;
+	margin-top: 10px;
 }
-
+.r-wenzi2 i:hover{
+	transform: rotate(180deg);
+}
 
 
 /* 导航开始 */
@@ -120,6 +149,9 @@ button{
 	border-width: 0px;
 
 }
+button:active{
+	color: #fff;
+}
 .nav-wenzi{
 	height: 14px;
 }
@@ -144,6 +176,7 @@ button{
 	height: 536px;
 	background: pink;
 	position: relative;
+	
 }
 .banner-nav{
 	width: 100%;
@@ -179,6 +212,8 @@ button{
 	width: 100%;
 	height: 500px;
 	background-image: url('../img/banner.jpg');
+	position:absolute;
+	z-index: 1;
 }
 .shop{
 	width: 200px;
@@ -187,13 +222,14 @@ button{
 	position: absolute;
 	left: 45px;
 	top: 0;
+	z-index: 9;
 }
 .shop-top{
-	width: 200px;
+	width: 180px;
 	height: 36px;
 	background: #e22127;
 	line-height: 36px;
-	text-align: center;
+	padding-left: 20px;
 	color: #fff;
 }
 .shop-top i{
@@ -205,12 +241,26 @@ color: #fff;
 	height: 500px;
 	/* background:#e22127;  */
 }
-.shop-list ul li{
-	font-size: 14px;
-	margin-bottom: 19px;
-	/* margin-left: 20px; */
-	text-align: center;
+.shop-list ul {
+	width: 200px;
+	height: 500px;
+	margin-top: 10px;
 }
+.shop-list ul li{
+	width: 178px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 9px;
+	padding-left: 20px;
+	
+	
+}
+.shop-list ul li:hover{
+	background: orangered;
+	color: #fff;
+}
+
 .shop-list ul li i{
 	margin-right: 4px;
 	color: #939292;
@@ -240,6 +290,12 @@ color: #fff;
 }
 .lunbodian ul li.dian3{
 	background: #fff;
+}
+.banner-nav1 a{
+	color: #000;
+}
+.banner-nav1 a:hover{
+	color: red;
 }
 
 /* banner下面一栏开始 */
@@ -336,19 +392,26 @@ color: #fff;
 .banner-btom1-r{
 	width: 731px;
 	height: 436px;
-	background-image: url('../img/xiaotu.jpg');
+	/* background-image: url('../img/xiaotu.jpg'); */
 	float: left;
 	margin-left: 11px;
 }
-/* .banner-btom1-r ul li{
+.banner-btom1-r ul li{
 	width: 120px;
 	height: 108px;
-	background: pink;
+	background: #fff;
 	float: left;
 	border-bottom: 1px solid #eeeeee;
 	border-left: 1px solid #eeeeee;
 }
- */
+.ba-bt-r{
+	width: 100px;
+	height: 50px;
+
+	margin: 29px auto;
+
+}
+
 
 /* 潮流前沿开始 */
 
@@ -797,7 +860,8 @@ color: #fff;
 	width: 1197px;
 	height: 213px;
 	/* background: red; */
-	margin: 0 auto;
+	/* margin: 0 auto; */
+	margin-left: 142px;
 	
 }
 .foot-center1{
@@ -855,4 +919,42 @@ color: #fff;
 	margin-right: 5px;
 	float: left;
 	color: #fff;
+}
+.foot-wz3{
+	height: 24px;
+}
+.foot-wz3-1-img{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.foot-wz3-wz{
+	margin-left:10px;
+	float: left;
+}
+
+.foot-wz3-1{
+	float: left;
+	font-size: 12px;
+	color: #bbbbbb;
+	margin-right: 70px;
+	line-height: 24px;
+}
+.foot-wz3-2{
+	color: #999999;
+}
+.wz4-img{
+	height: 30px;
+	margin-top: 5px;
+}
+.w4{
+	width: 73px;
+	height: 30px;
+	float: left;
+}
+.w5{
+	width: 80px;
+	height: 30px;
+	margin-left: 20px;
+	float: left;
 }
