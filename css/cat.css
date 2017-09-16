@@ -403,6 +403,10 @@ color: #fff;
 	float: left;
 	border-bottom: 1px solid #eeeeee;
 	border-left: 1px solid #eeeeee;
+	transition: 1s;
+}
+.banner-btom1-r ul li:hover{
+	background: rgba(0, 0, 0, .5);
 }
 .ba-bt-r{
 	width: 100px;
@@ -490,6 +494,10 @@ color: #fff;
 	height: 140px;
 	background: #fff;
 	margin: 0 auto;
+	transition: 1s;
+}
+.list1-botm1-img:hover img{
+	transform: scale(1.2, 1.2);
 }
 
 /* 背景图片条开始 */
@@ -623,6 +631,10 @@ color: #fff;
 	border-left: 1px solid #eeeeee;
 	overflow: hidden;
 	float: left;
+	transition: 1s;
+}
+.meili-list:hover img{
+	transform: translate(-3px, 0);
 }
 .list-title{
 	font-size: 16px;
@@ -655,8 +667,11 @@ color: #fff;
 	height: 100px;
 	margin-left: 149px;
 	margin-bottom: 0;
+	transition: 1s;
 }
-
+.sub-list-img:hover img{
+	transform: translate(-3px, 0);
+}
 
 /* 酷玩开始 */
 .kuwan-img{
@@ -702,7 +717,11 @@ color: #fff;
 	height: 195px;
 	float: right;
 	margin-top: 25px;
+	transition: 1s;
 
+}
+.kuwan-list-img:hover img{
+	transform: translate(-3px, 0);
 }
 .kuwan-list2{
 	width: 245px;
@@ -732,7 +751,11 @@ color: #fff;
 	width: 154px;
 	height: 154px;
 	float: right;
+	transition: 1s;
 
+}
+.list2-img:hover img{
+	transform: translate(-3px, 0);
 }
 /* 猜你喜欢 */
 .love{
@@ -766,7 +789,7 @@ color: #fff;
 
 .love-btom{
 	width: 100%;
-	height: 670px;
+	height: 675px;
 	/* background: orchid; */
 	float: left;
 }
@@ -777,6 +800,10 @@ color: #fff;
 	float: left;
 	margin-right: 12px;
 	margin-bottom: 14px;
+	transition:all 1s;
+}
+.love-list:hover{
+	background: rgba(0, 0, 0, .3);
 }
 .love-list2{
 	margin-right: 0px;
