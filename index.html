@@ -7,6 +7,23 @@
 	<link rel="stylesheet" type="text/css" href="css/cat.css">
 </head>
 <body>
+	<!-- 顶部滚动条开始 -->
+	<div class="topscroll">
+		<div class="topscroll-content">
+			<div class="tianmao">
+				<img src="img/tm.png" alt="">
+			</div>
+			<div class="search">
+				<input type="text" placeholder="搜索 天猫 商品/品牌/店铺">
+			</div>
+			
+			<button type="submit">搜索</button>
+			
+		</div>
+	</div>
+	<!-- 顶部滚动条结束 -->
+
+
 	<!-- 头部开始 -->
 	<div class="top">
 		<div class="top-l">
@@ -16,8 +33,15 @@
 		</div>
 		<div class="top-r">
 			<div class="r-wenzi r-wenzi2">
-				<a href="">我的淘宝</a>
-				<i class="iconfont ">&#xe613;</i>
+				<div class="mytaobao">
+					<a href="">我的淘宝</a>
+					<i class="iconfont " class="i1">&#xe613;</i>
+				</div>
+				<div class="y-mytaobao">
+					<a href="">已买到的宝贝</a>
+					<a href="">已卖出的宝贝</a>
+				</div>
+
 			</div>
 			<div class="r-wenzi">
 				<i class="iconfont">&#xe63b;</i>
@@ -28,8 +52,15 @@
 				<a href="">购物车0件</a>
 			</div>
 			<div class="r-wenzi  r-wenzi2">
-				<a href="">收藏夹</a>
-				<i class="iconfont">&#xe613;</i>
+				<div class="mytaobao">
+					<a href="">收藏夹</a>
+					<i class="iconfont">&#xe613;</i>
+				</div>
+				<div class="y-mytaobao">
+					<a href="">收藏的宝贝</a>
+					<a href="">收藏的店铺</a>
+				</div>
+				
 			</div>
 			<div class="r-wenzi">|</div>
 			<div class="r-wenzi">
@@ -39,15 +70,118 @@
 			<div class="r-wenzi">
 				<a href="">淘宝网</a>
 			</div>
-			<div class="r-wenzi r-wenzi2">
-				<a href="">商家支持</a>
-				<i class="iconfont">&#xe613;</i>
+			<div class="r-wenzi r-wenzi2 shangjia">
+				<div class="mytaobao">
+					<a href="">商家支持</a>
+					<i class="iconfont">&#xe613;</i>
+				</div>
+				<div class="y-mytaobao menu-bd">
+					<ul>
+						<li>
+							<h3>商家：</h3>
+							<a href="">商家中心</a>
+							<a href="">天猫规则</a>
+							<a href="">商家入驻</a>
+							<a href="">运营服务</a>
+							<a href="">商家品控</a>
+							<a href="">商家工具</a>
+							<a href="">天猫智库</a>
+							<a href="">喵言喵语</a>
+						</li>
+						<li>
+							<h3>帮助：</h3>
+							<a href="">帮助中心</a>
+							<a href="">问商友</a>
+						</li>
+					</ul>
+				</div>
+				
 			</div>
 			<a href="" class="y1"><i class="iconfont">&#xe94f;</i></a>
 			<div class="r-wenzi r-wenzi1 r-wenzi2">
+
+				<div class="webnav mytaobao">
+					<a href="">网站导航</a>
+					<i class="iconfont ">&#xe613;</i>
+				</div>
+				<div class="y-webnav">
+					<div class="site-cont site-hot">
+						<h2>
+							热点推荐
+							<span>Hot</span>
+						</h2>
+						<ul class="list-site">
+							<li><a href="">天猫超市</a></li>
+							<li><a href="">喵鲜生</a></li>
+							<li><a href="">科技新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+							<li><a href="">女装新品</a></li>
+						</ul>
+					</div>
+					<div class="site-cont site-market">
+						<h2>
+							行业市场
+							<span>Market</span>
+						</h2>
+						<ul class="list-site">
+							<li><a href="">箱包</a></li>
+							<li><a href="">女装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+							<li><a href="">男装</a></li>
+						</ul>
+					</div>
+					<div class="site-cont site-brand">
+						<h2>
+							品牌风尚
+							<span>Brand</span>
+						</h2>
+						<ul class="list-site">
+							<li><a href="">尚天猫</a></li>
+							<li><a href="">大牌街</a></li>
+							<li><a href="">潮牌街</a></li>
+							<li><a href="">天猫原创</a></li>
+							<li><a href="">什么牌子好</a></li>
+							
+						</ul>
+					</div>	
+					<div class="site-cont site-help">
+						<h2>
+							服务指南
+							<span>Help</span>
+						</h2>
+						<ul class="list-site">
+							<li><a href="">帮助中心 </a></li>
+							<li><a href="">品质保障 </a></li>
+							<li><a href="">特色服务 </a></li>
+							<li><a href="">7天退换货 </a></li>
+							
+							
+						</ul>
+					</div>					
+
+				</div>
 				
-				网站导航
-				<i class="iconfont ">&#xe613;</i>
 			</div>
 			
 		</div>
@@ -88,7 +222,7 @@
 	<!-- 导航栏结束 -->
 
 	<!-- banner开始 -->
-	<div class="banner">
+	<div class="banner fllor">
 		<div class="banner-nav">
 			<div class="banner-nav0">
 				<div class="banner-nav1">
@@ -125,7 +259,16 @@
 				</div>
 			</div>
 		</div>
-		<div class="banner-banner"></div>
+		<div class="banner-banner">
+			<ul>
+				<li class="active"><a href="#"><img src="img/banner1.jpg" alt=""></a></li>
+				<li><a href="#"><img src="img/banner2.webp" alt=""></a></li>
+				<li><a href="#"><img src="img/banner3.jpg" alt=""></a></li>
+				<li><a href="#"><img src="img/banner4.webp" alt=""></a></li>
+				<li><a href="#"><img src="img/banner5.jpg" alt=""></a></li>
+			</ul>
+
+		</div>
 		<div class="shop">
 			<div class="shop-top">
 				<i class="iconfont ">&#xe70b;</i>
@@ -153,22 +296,26 @@
 					
 				</ul>
 			</div>
+			
+
+		</div>
 		<div class="lunbodian">
-			<ul>
-				<li></li>
-				<li></li>
-				<li class="dian3"></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+				<ul>
+					<li class="dian3"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					
+				</ul>
 		</div>
-		</div>
+		<div class="arrow" id="r">&gt;</div>
+		<div class="arrow" id="l">&lt;</div>
 	</div>
 	<!-- banner结束 -->
 
 	<!-- banner下面一栏开始 -->
-	<div class="banner-btom">
+	<div class="banner-btom fllor">
 		<div class="banner-btom1">
 			<div class="banner-btom1-l">
 				<div class="btom-top">
@@ -233,7 +380,7 @@
 	<!-- banner下面一栏结束 -->
 
 	<!-- 潮流前沿开始 -->
-	<div class="chaoliu">
+	<div class="chaoliu fllor">
 		<div class="chaoliu-list">
 			<div class="chaoliu-list1">
 				<div class="chaoliu-list1-top">
@@ -397,7 +544,7 @@
 	<!-- 背景图片条结束 -->
 
 		<!-- 美丽人生开始 -->
-		<div class="meili">
+		<div class="meili fllor">
 			<div class="meili-top">
 				<div class="kuang"></div>	
 				<h1>美丽人生</h1>
@@ -429,65 +576,64 @@
 					<div class="meili-list">
 						<div class="list-title">出游新装备</div>
 						<div class="list-sub-title">文艺复古范儿</div>
-						<img src="img/15.jpg" alt="">
+						<img data-src="img/15.jpg" alt="">
 					</div>
 
 					<div class="meili-list">
 						<div class="list-title">出游新装备</div>
 						<div class="list-sub-title">文艺复古范儿</div>
-						<img src="img/15.jpg" alt="">
+						<img data-src="img/15.jpg" alt="">
 					</div>
 
 					<div class="meili-list">
 						<div class="list-title">出游新装备</div>
 						<div class="list-sub-title">文艺复古范儿</div>
-						<img src="img/15.jpg" alt="">
+						<img data-src="img/15.jpg" alt="">
 					</div>
 					<div class="meili-list">
 						<div class="list-title">出游新装备</div>
 						<div class="list-sub-title">文艺复古范儿</div>
-						<img src="img/15.jpg" alt="">
+						<img data-src="img/15.jpg" alt="">
 					</div>
 					<div class="meili-list">
 						<div class="list-title">出游新装备</div>
 						<div class="list-sub-title">文艺复古范儿</div>
-						<img src="img/15.jpg" alt="">
+						<img data-src="img/15.jpg" alt="">
 					</div>
 					<div class="meili-list">
 						<div class="list-title">出游新装备</div>
 						<div class="list-sub-title">文艺复古范儿</div>
-						<img src="img/15.jpg" alt="">
+						<img data-src="img/15.jpg" alt="">
 					</div>
 				</div>
 				<div class="meili-botm-r2">
 					<div class="meili-sub-list">
 						<div class="list-title">出游新装备</div>
 						<div class="list-sub-title">文艺复古范儿</div>
-						<div class="sub-list-img"><img src="img/16.jpg" alt=""></div>
+						<div class="sub-list-img"><img data-src="img/16.jpg" alt=""></div>
 						
 					</div>
 					<div class="meili-sub-list">
 						<div class="list-title">出游新装备</div>
 						<div class="list-sub-title">文艺复古范儿</div>
-						<div class="sub-list-img"><img src="img/16.jpg" alt=""></div>
+						<div class="sub-list-img"><img data-src="img/16.jpg" alt=""></div>
 						
 					</div>
 					<div class="meili-sub-list">
 						<div class="list-title">出游新装备</div>
 						<div class="list-sub-title">文艺复古范儿</div>
-						<div class="sub-list-img"><img src="img/16.jpg" alt=""></div>
+						<div class="sub-list-img"><img data-src="img/16.jpg" alt=""></div>
 						
 					</div>
 				</div>
 
-			</div>
-			
+			</div>			
 		</div>
 		<!-- 美丽人生结束 -->
 
 
 		<!-- 潮店酷玩开始 -->
-		<div class="meili">
+		<div class="meili fllor">
 			<div class="meili-top">
 				<div class="kuang"></div>	
 				<h1>潮店酷玩</h1>
@@ -526,7 +672,7 @@
 						</div>
 						
 						<div class="kuwan-list-img">
-							<img src="img/19.jpg" alt="">
+							<img data-src="img/19.jpg" alt="">
 						</div>
 						
 					</div>
@@ -538,7 +684,7 @@
 						<div class="list2-title list2-sub-title">下单抽观影券</div>
 						
 						<div class="list2-img">
-							<img src="img/21.jpg" alt="">
+							<img data-src="img/21.jpg" alt="">
 							
 						</div>
 
@@ -550,9 +696,9 @@
 						<div class="list2-title list2-sub-title">下单抽观影券</div>
 						
 						<div class="list2-img">
-							<img src="img/21.jpg" alt="">
+							<img data-src="img/21.jpg" alt="">
 							
-						</div>
+						</div>data-
 
 					</div>
 					<div class="kuwan-list2">
@@ -562,20 +708,7 @@
 						<div class="list2-title list2-sub-title">下单抽观影券</div>
 						
 						<div class="list2-img">
-							<img src="img/21.jpg" alt="">
-							
-						</div>
-
-					</div>
-
-					<div class="kuwan-list2">
-						
-					
-						<div class="list2-title">下单抽观影券</div>
-						<div class="list2-title list2-sub-title">下单抽观影券</div>
-						
-						<div class="list2-img">
-							<img src="img/21.jpg" alt="">
+							<img data-src="img/21.jpg" alt="">
 							
 						</div>
 
@@ -588,7 +721,7 @@
 						<div class="list2-title list2-sub-title">下单抽观影券</div>
 						
 						<div class="list2-img">
-							<img src="img/21.jpg" alt="">
+							<img data-src="img/21.jpg" alt="">
 							
 						</div>
 
@@ -601,7 +734,20 @@
 						<div class="list2-title list2-sub-title">下单抽观影券</div>
 						
 						<div class="list2-img">
-							<img src="img/21.jpg" alt="">
+							<img data-src="img/21.jpg" alt="">
+							
+						</div>
+
+					</div>
+
+					<div class="kuwan-list2">
+						
+					
+						<div class="list2-title">下单抽观影券</div>
+						<div class="list2-title list2-sub-title">下单抽观影券</div>
+						
+						<div class="list2-img">
+							<img data-src="img/21.jpg" alt="">
 							
 						</div>
 
@@ -616,7 +762,7 @@
 
 
 		<!-- 猜你喜欢开始 -->
-		<div class="love">
+		<div class="love fllor meili">
 			<div class="love-top">
 				<div class="top-love-wenzi">
 					<div class="top-wenzi"><i class="iconfont">&#xe60e;</i></div>
@@ -630,7 +776,7 @@
 			<div class="love-btom">
 				<div class="love-list">
 					<div class="love-list-img">
-						<img src="img/26.jpg" alt="">
+						<img data-src="img/26.jpg" alt="">
 					</div>
 					<div class="h2">【抢券减120 到手3829 】苹果 iPhone 6s Plus 32G 全网通4G手机</div>
 					<div class="h3">
@@ -640,7 +786,7 @@
 				</div>
 				<div class="love-list">
 					<div class="love-list-img">
-						<img src="img/26.jpg" alt="">
+						<img data-src="img/26.jpg" alt="">
 					</div>
 					<div class="h2">【抢券减120 到手3829 】苹果 iPhone 6s Plus 32G 全网通4G手机</div>
 					<div class="h3">
@@ -650,7 +796,7 @@
 				</div>
 				<div class="love-list">
 					<div class="love-list-img">
-						<img src="img/26.jpg" alt="">
+						<img data-src="img/26.jpg" alt="">
 					</div>
 					<div class="h2">【抢券减120 到手3829 】苹果 iPhone 6s Plus 32G 全网通4G手机</div>
 					<div class="h3">
@@ -660,7 +806,7 @@
 				</div>
 				<div class="love-list">
 					<div class="love-list-img">
-						<img src="img/26.jpg" alt="">
+						<img data-src="img/26.jpg" alt="">
 					</div>
 					<div class="h2">【抢券减120 到手3829 】苹果 iPhone 6s Plus 32G 全网通4G手机</div>
 					<div class="h3">
@@ -670,7 +816,7 @@
 				</div>
 				<div class="love-list love-list2">
 					<div class="love-list-img">
-						<img src="img/26.jpg" alt="">
+						<img data-src="img/26.jpg" alt="">
 					</div>
 					<div class="h2">【抢券减120 到手3829 】苹果 iPhone 6s Plus 32G 全网通4G手机</div>
 					<div class="h3">
@@ -680,7 +826,7 @@
 				</div>
 				<div class="love-list">
 					<div class="love-list-img">
-						<img src="img/26.jpg" alt="">
+						<img data-src="img/26.jpg" alt="">
 					</div>
 					<div class="h2">【抢券减120 到手3829 】苹果 iPhone 6s Plus 32G 全网通4G手机</div>
 					<div class="h3">
@@ -690,7 +836,7 @@
 				</div>
 				<div class="love-list">
 					<div class="love-list-img">
-						<img src="img/26.jpg" alt="">
+						<img data-src="img/26.jpg" alt="">
 					</div>
 					<div class="h2">【抢券减120 到手3829 】苹果 iPhone 6s Plus 32G 全网通4G手机</div>
 					<div class="h3">
@@ -700,7 +846,7 @@
 				</div>
 				<div class="love-list">
 					<div class="love-list-img">
-						<img src="img/26.jpg" alt="">
+						<img data-src="img/26.jpg" alt="">
 					</div>
 					<div class="h2">【抢券减120 到手3829 】苹果 iPhone 6s Plus 32G 全网通4G手机</div>
 					<div class="h3">
@@ -710,7 +856,7 @@
 				</div>
 				<div class="love-list">
 					<div class="love-list-img">
-						<img src="img/26.jpg" alt="">
+						<img data-src="img/26.jpg" alt="">
 					</div>
 					<div class="h2">【抢券减120 到手3829 】苹果 iPhone 6s Plus 32G 全网通4G手机</div>
 					<div class="h3">
@@ -720,7 +866,7 @@
 				</div>
 				<div class="love-list love-list2">
 					<div class="love-list-img">
-						<img src="img/26.jpg" alt="">
+						<img data-src="img/26.jpg" alt="">
 					</div>
 					<div class="h2">【抢券减120 到手3829 】苹果 iPhone 6s Plus 32G 全网通4G手机</div>
 					<div class="h3">
@@ -898,11 +1044,40 @@
 					</div>
 
 					
+				</div>
 			</div>
 		</div>
 		<!-- 底部结束 -->	
 
-
 	
+	<!-- 左边滚动条开始 -->
+	<div class="scroll">
+		<div class="muinav">导航</div>
+		<ul class="fpLift">
+
+				<li><div class="nav-name">天猫超市</div></li>
+				<li><div class="nav-name">天猫国际</div></li>
+				<li><div class="nav-name">潮流前沿</div></li>
+				<li><div class="nav-name">美丽人生</div></li>
+				<li><div class="nav-name">潮电酷玩</div></li>
+				<li><div class="nav-name">猜你喜欢</div></li>
+
+			
+			<div class="last">
+				<i class="iconfont">&#xe7cf;</i>
+				<div class="db">顶部</div>
+			</div>
+		</ul>
+	</div>
+	<!-- 左边滚动条结束 -->
+
+
+	<!-- 右边滚动条开始 -->
+		<!-- <div class="scroll-right">
+			
+		</div> -->
+	<!-- 右边滚动条结束 -->
 </body>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/animate.js"></script>
 </html>
