@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-09-02 18:45:00
 * @Last Modified by:   Administrator
-* @Last Modified time: 2017-09-04 14:51:54
+* @Last Modified time: 2017-10-21 13:38:13
 */
 *{
 	margin: 0;
@@ -16,4 +16,18 @@ img{
 }
 a{
 	text-decoration: none;
+	color: #999;
+
+}
+a:link{
+	color: orange;
+}
+a:visited{
+	color: #999;
+}
+a:hover{
+	color: red;
+}
+a:active{
+	color: pink;
 }

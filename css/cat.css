@@ -28,9 +28,9 @@
 }
 .topscroll .topscroll-content{
 	width: 1260px;
-	height: 50px;
+	height: 40px;
 	margin: 0 auto;
-	padding: 10px 10px;
+	padding-top: 10px;
 }
 .topscroll-content .tianmao{
 	width: 160px;
@@ -115,7 +115,7 @@
 .r-wenzi2 .i{
 	top: 2px;
 }
-.r-wenzi2 a:hover{
+.r-wenzi2:hover a{
 	text-decoration: underline;
 }
 .r-wenzi .mytaobao{
@@ -133,11 +133,16 @@
 	z-index: 999;
 
 }
-.r-wenzi:hover{
+
+.r:hover{
 	background: #fff;
 }
 .r-wenzi:hover .y-mytaobao{
 	display: block;
+}
+.mytaobao:hover a{
+	text-decoration: underline;
+	color: red;
 }
 .r-wenzi .y-mytaobao a{
 	display: block;
@@ -145,8 +150,9 @@
 	color: #999;
 	font-size: 11px;
 	text-align: center;
+	text-decoration: none;
 }
-.r-wenzi .y-mytaobao a:hover{
+.r-wenzi .y-mytaobao a:hover {
 	text-decoration: underline;
 	color: red;
 }
@@ -185,7 +191,10 @@
 	line-height: 1.5;
 	border-bottom:1px dotted #827777;
 }
-.r-wenzi .menu-bd ul li a:hover{
+.r-wenzi .menu-bd ul li a{
+	text-decoration: none;
+}
+.r-wenzi .menu-bd ul li a:hover {
 	color: red;
 	text-decoration: underline red;
 }
@@ -332,7 +341,7 @@
 	width: 491px;
 	height: 36px;
 	border: 2px solid #ff0036;
-	
+	outline: none;
 	float: left;
 }
 button{
@@ -341,6 +350,7 @@ button{
 	background: #ff0036;
 	float: right;
 	border-width: 0px;
+	outline: none;
 
 }
 button:active{
@@ -449,7 +459,7 @@ button:active{
 	right: 0;
 }
 .banner #l{
-	left: 241px;
+	left: 246px;
 }
 
 .shop{
@@ -643,19 +653,28 @@ color: #fff;
 	border-bottom: 1px solid #eeeeee;
 	border-left: 1px solid #eeeeee;
 	transition: 1s;
+	position: relative;
 }
-.banner-btom1-r ul li:hover{
-	background: rgba(0, 0, 0, .5);
-}
-.ba-bt-r{
+
+.banner-btom1-r .ba-bt-r{
 	width: 100px;
 	height: 50px;
-
 	margin: 29px auto;
 
 }
+.banner-btom1-r .yinying{
+	width: 120px;
+	height: 108px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background:rgba(0,0,0,0);
+	transition: background 1s;
 
-
+}
+.banner-btom1-r ul li:hover .yinying{
+	background:rgba(0,0,0,.5);
+}
 /* 潮流前沿开始 */
 
 .chaoliu{
@@ -666,7 +685,6 @@ color: #fff;
 .chaoliu-list{
 	width: 1230px;
 	height: 478px;
-	/* background: red; */
 	margin: 0 auto;
 }
 .chaoliu-list1{
@@ -684,21 +702,18 @@ color: #fff;
 	height: 36px;
 	background: #ff0036;
 	line-height: 36px;
-	/* color: #fff; */
 	text-align: center;
 
 }
 .chaoliu-list1-botm{
 	width: 238px;
 	height: 441px;
-	/* background: pink; */
 	
 	margin: 0 auto;
 }
 .chaoliu-list1-botm1{
 	width: 200px;
 	height: 220px;
-	/* background: hotpink; */
 	margin-left: 20px;
 	border-bottom: 1px solid #eeeeee;
 	float: left;
@@ -733,10 +748,14 @@ color: #fff;
 	height: 140px;
 	background: #fff;
 	margin: 0 auto;
-	transition: 1s;
+	
+}
+.list1-botm1-img img{
+	transition:all 1s;
 }
 .list1-botm1-img:hover img{
-	transform: scale(1.2, 1.2);
+	transform: scale(1.1, 1.1);
+	
 }
 
 /* 背景图片条开始 */
@@ -858,22 +877,23 @@ color: #fff;
 .meili-btom-r1{
 	width: 732px;
 	height: 440px;
-	/* background: yellowgreen; */
 	float: left;
 
 }
 .meili-list{
 	width: 243px;
 	height: 219px;
-	/* background: pink; */
 	border-bottom: 1px solid #eeeeee;
 	border-left: 1px solid #eeeeee;
 	overflow: hidden;
 	float: left;
 	transition: 1s;
 }
+.meili-list img{
+	transition: all 1s;
+}
 .meili-list:hover img{
-	transform: translate(-3px, 0);
+	transform: translate(-6px, 0);
 }
 .list-title{
 	font-size: 16px;
@@ -908,8 +928,11 @@ color: #fff;
 	margin-bottom: 0;
 	transition: 1s;
 }
+.sub-list-img img{
+	transition: all 1s;
+}
 .sub-list-img:hover img{
-	transform: translate(-3px, 0);
+	transform: translate(-6px, 0);
 }
 
 /* 酷玩开始 */
@@ -959,8 +982,11 @@ color: #fff;
 	transition: 1s;
 
 }
+.kuwan-list-img img{
+	transition: all 1s;
+}
 .kuwan-list-img:hover img{
-	transform: translate(-3px, 0);
+	transform: translate(-6px, 0);
 }
 .kuwan-list2{
 	width: 245px;
@@ -993,8 +1019,11 @@ color: #fff;
 	transition: 1s;
 
 }
+.list2-img img{
+	transition: all 1s;
+}
 .list2-img:hover img{
-	transform: translate(-3px, 0);
+	transform: translate(-6px, 0);
 }
 /* 猜你喜欢 */
 .love{
